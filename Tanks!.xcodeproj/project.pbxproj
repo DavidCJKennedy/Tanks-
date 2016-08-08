@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE6DB73E1D58EC13000290FF /* tankFiring.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CE6DB73D1D58EC13000290FF /* tankFiring.mp3 */; };
+		CE6DB7401D58EF64000290FF /* tankDestroyed.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CE6DB73F1D58EF64000290FF /* tankDestroyed.mp3 */; };
 		CE7F3C7A1D54F193008BD900 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7F3C791D54F193008BD900 /* AppDelegate.swift */; };
 		CE7F3C7C1D54F193008BD900 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7F3C7B1D54F193008BD900 /* ViewController.swift */; };
 		CE7F3C7F1D54F193008BD900 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE7F3C7D1D54F193008BD900 /* Main.storyboard */; };
@@ -14,6 +16,10 @@
 		CE7F3C841D54F193008BD900 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE7F3C821D54F193008BD900 /* LaunchScreen.storyboard */; };
 		CE7F3C8F1D54F193008BD900 /* Tanks_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7F3C8E1D54F193008BD900 /* Tanks_Tests.swift */; };
 		CE7F3C9A1D54F193008BD900 /* Tanks_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7F3C991D54F193008BD900 /* Tanks_UITests.swift */; };
+		CE7F3CA81D56032E008BD900 /* Tank.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7F3CA71D56032E008BD900 /* Tank.swift */; };
+		CE7F3CAC1D57CE90008BD900 /* tanks.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CE7F3CAB1D57CE90008BD900 /* tanks.mp3 */; };
+		CE7F3CAE1D57EFFC008BD900 /* Enemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7F3CAD1D57EFFC008BD900 /* Enemy.swift */; };
+		CE7F3CB01D57F00D008BD900 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7F3CAF1D57F00D008BD900 /* Player.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CE6DB73D1D58EC13000290FF /* tankFiring.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tankFiring.mp3; sourceTree = "<group>"; };
+		CE6DB73F1D58EF64000290FF /* tankDestroyed.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tankDestroyed.mp3; sourceTree = "<group>"; };
 		CE7F3C761D54F193008BD900 /* Tanks!.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tanks!.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE7F3C791D54F193008BD900 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE7F3C7B1D54F193008BD900 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +55,10 @@
 		CE7F3C951D54F193008BD900 /* Tanks!UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tanks!UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE7F3C991D54F193008BD900 /* Tanks_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tanks_UITests.swift; sourceTree = "<group>"; };
 		CE7F3C9B1D54F193008BD900 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE7F3CA71D56032E008BD900 /* Tank.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tank.swift; sourceTree = "<group>"; };
+		CE7F3CAB1D57CE90008BD900 /* tanks.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tanks.mp3; sourceTree = "<group>"; };
+		CE7F3CAD1D57EFFC008BD900 /* Enemy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enemy.swift; sourceTree = "<group>"; };
+		CE7F3CAF1D57F00D008BD900 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +109,18 @@
 		CE7F3C781D54F193008BD900 /* Tanks! */ = {
 			isa = PBXGroup;
 			children = (
+				CE7F3CAB1D57CE90008BD900 /* tanks.mp3 */,
+				CE6DB73D1D58EC13000290FF /* tankFiring.mp3 */,
+				CE6DB73F1D58EF64000290FF /* tankDestroyed.mp3 */,
 				CE7F3C791D54F193008BD900 /* AppDelegate.swift */,
 				CE7F3C7B1D54F193008BD900 /* ViewController.swift */,
 				CE7F3C7D1D54F193008BD900 /* Main.storyboard */,
 				CE7F3C801D54F193008BD900 /* Assets.xcassets */,
 				CE7F3C821D54F193008BD900 /* LaunchScreen.storyboard */,
 				CE7F3C851D54F193008BD900 /* Info.plist */,
+				CE7F3CA71D56032E008BD900 /* Tank.swift */,
+				CE7F3CAD1D57EFFC008BD900 /* Enemy.swift */,
+				CE7F3CAF1D57F00D008BD900 /* Player.swift */,
 			);
 			path = "Tanks!";
 			sourceTree = "<group>";
@@ -229,6 +247,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE7F3CAC1D57CE90008BD900 /* tanks.mp3 in Resources */,
+				CE6DB73E1D58EC13000290FF /* tankFiring.mp3 in Resources */,
+				CE6DB7401D58EF64000290FF /* tankDestroyed.mp3 in Resources */,
 				CE7F3C841D54F193008BD900 /* LaunchScreen.storyboard in Resources */,
 				CE7F3C811D54F193008BD900 /* Assets.xcassets in Resources */,
 				CE7F3C7F1D54F193008BD900 /* Main.storyboard in Resources */,
@@ -256,7 +277,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE7F3CAE1D57EFFC008BD900 /* Enemy.swift in Sources */,
 				CE7F3C7C1D54F193008BD900 /* ViewController.swift in Sources */,
+				CE7F3CA81D56032E008BD900 /* Tank.swift in Sources */,
+				CE7F3CB01D57F00D008BD900 /* Player.swift in Sources */,
 				CE7F3C7A1D54F193008BD900 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -482,6 +506,7 @@
 				CE7F3CA01D54F193008BD900 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CE7F3CA11D54F193008BD900 /* Build configuration list for PBXNativeTarget "Tanks!Tests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +515,7 @@
 				CE7F3CA31D54F193008BD900 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CE7F3CA41D54F193008BD900 /* Build configuration list for PBXNativeTarget "Tanks!UITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +524,7 @@
 				CE7F3CA61D54F193008BD900 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
